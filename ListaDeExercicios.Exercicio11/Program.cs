@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            //Faça um algoritmo para receber um número qualquer e informar na tela se é par ou ímpar.
+
             #region input de dados
             Console.Write("Digite a temperatura em Celsius: ");
             double tempCelsius = Convert.ToDouble(Console.ReadLine());

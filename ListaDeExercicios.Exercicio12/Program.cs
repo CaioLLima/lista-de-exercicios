@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            //Escrever um algoritmo que gera e escreve os números ímpares entre 100 e 200.
+
             #region input de dados
             Console.Write("Digite a temperatura em Celsius: ");
             double tempCelsius = Convert.ToDouble(Console.ReadLine());
