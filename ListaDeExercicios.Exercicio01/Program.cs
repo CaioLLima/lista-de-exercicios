@@ -23,7 +23,7 @@
             #endregion
 
             #region output dos dados
-            Console.Write($"O volume da caixa é de: {volume_caixa}.");
+            Console.Write($"O volume da caixa é de: {volume_caixa}");
             #endregion
 
             Console.ReadLine();

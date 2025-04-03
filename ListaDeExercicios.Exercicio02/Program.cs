@@ -8,7 +8,6 @@
             //VOLUME_DA_CILINDRO V = pi * raio² * a
 
             #region input de dados
-
             Console.Write("Digite o raio do cilindro: ");
             double raio = Convert.ToDouble(Console.ReadLine());
 
@@ -21,7 +20,7 @@
             #endregion
 
             #region output dos dados
-            Console.Write($"O tamanho da caida é de: {resultado} ");
+            Console.Write($"O tamanho do cilindro é de: {resultado}");
             #endregion
 
             Console.ReadLine();
