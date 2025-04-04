@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            //Escreva um programa que leia um número e imprima a sequência de Fibonacci até esse número.
+
             #region input de dados
             Console.Write("Digite a temperatura em Celsius: ");
             double tempCelsius = Convert.ToDouble(Console.ReadLine());

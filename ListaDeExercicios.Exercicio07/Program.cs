@@ -10,12 +10,20 @@
             int numero = Convert.ToInt32(Console.ReadLine());
             #endregion
 
-            #region processamento
-            if (numero > 0 && )
-            {
 
+            #region processamento
+            bool ehPrimo(int numero)
+            {
+                if (numero <= 1)
+                    return false;
+
+                for (int i = 2; i <= Math.Sqrt(numero); i++)
+                {
+                    if (numero % i == 0)
+                        return false;
+                }
+                return true;
             }
-            
             #endregion
 
             #region output dos dados
