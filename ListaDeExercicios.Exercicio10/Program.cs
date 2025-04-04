@@ -16,17 +16,27 @@
             ● Acima de 30 obeso*/
 
             #region input de dados
-            Console.Write("Digite a temperatura em Celsius: ");
-            double tempCelsius = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Informe seu peso em kg: ");
+            double peso = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Informe sua altura em cm: ");
+            double altura = Convert.ToDouble(Console.ReadLine());
             #endregion
 
             #region processamento
-            double tempKelvin = tempCelsius * 1.8 + 32;
+            altura /= 100;
+            double imc = peso / Math.Pow(altura, 2);
+
+            if (imc <= 18.5) 
+                Console.Write($"Seu IMC é: {imc}. Você está abaixo do peso ideal."); 
+            else if (imc > 18.5 && imc <= 25)
+                Console.Write($"Seu IMC é: {imc}. Você está com o peso ideal."); 
+            else if (imc > 25 && imc <= 30)
+                Console.Write($"Seu IMC é: {imc}. Você está acima do peso ideal."); 
+            else 
+                Console.Write($"Seu IMC é: {imc}. Você está comletamento obeso.");
             #endregion
 
-            #region output dos dados
-            Console.Write($"A temperatura em Fahrenheint é de: {tempKelvin}");
-            #endregion
 
             Console.ReadLine();
         }
