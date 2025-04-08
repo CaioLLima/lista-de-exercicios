@@ -7,16 +7,28 @@
             //Escreva um programa que leia um número e imprima a sequência de Fibonacci até esse número.
 
             #region input de dados
-            Console.Write("Digite a temperatura em Celsius: ");
-            double tempCelsius = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Insira um número para a sequência de Fibonacci ir até esse número: ");
+            double numero = Convert.ToDouble(Console.ReadLine());
+            int soma1 = 0;
+            int soma2 = 1;
+            int resultado = 0;
             #endregion
 
             #region processamento
-            double tempKelvin = tempCelsius * 1.8 + 32;
+            Console.Write($"{soma1} ");
+            Console.Write($"{soma2} ");
+
+            while (resultado < numero)
+            {
+                resultado = soma1 + soma2;
+                soma1 = soma2;
+                soma2 = resultado;
+                Console.Write($"{resultado} ");
+            }
             #endregion
 
             #region output dos dados
-            Console.Write($"A temperatura em Fahrenheint é de: {tempKelvin}");
+
             #endregion
 
             Console.ReadLine();
