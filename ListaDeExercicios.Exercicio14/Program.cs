@@ -21,9 +21,12 @@
             while (resultado < numero)
             {
                 resultado = soma1 + soma2;
+                if (resultado > numero)
+                    break;
+                Console.Write($"{resultado} ");
                 soma1 = soma2;
                 soma2 = resultado;
-                Console.Write($"{resultado} ");
+                
             }
             #endregion
 
