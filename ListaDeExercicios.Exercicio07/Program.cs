@@ -10,24 +10,26 @@
             int numero = Convert.ToInt32(Console.ReadLine());
             #endregion
 
-
             #region processamento
             bool ehPrimo(int numero)
             {
                 if (numero <= 1)
                     return false;
-
-                for (int i = 2; i <= Math.Sqrt(numero); i++)
+           
+                for (int i = 2; i < numero; i++)
                 {
                     if (numero % i == 0)
                         return false;
-                }
+                }               
                 return true;
             }
             #endregion
 
             #region output dos dados
-            Console.Write($"o número {numero} é um número primo.");
+            if (ehPrimo(numero))
+                Console.WriteLine($"O número {numero} é primo.");
+            else
+                Console.WriteLine($"O número {numero} não é primo.");
             #endregion
 
             Console.ReadLine();
